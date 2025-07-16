@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+:root {
+    --preto:black;
+    --branco:white;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header__container {
+    height: 20px;
+    width: 100%;
+    color: var(--preto);
+}
+
+.header__logo {
+    width: %;
+}

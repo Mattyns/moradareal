@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+:root {
+    --preto:black;
+    --branco:white;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header__container {
+    display: flex;
+    height: 20%;
+    width: 100%;
+    background-color: var(--branco);
+    align-items: center;
+    padding-top: 10px;
+    padd
+}
+
+.logo {
+    width: 50px;
+}
+
+.logo__img {
+    width: 120%;
+    object-fit: cover;
+}
+
+.logo__text {
+    font-size: 150%;
+}

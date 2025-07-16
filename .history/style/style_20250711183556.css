@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+:root {
+    --preto:black;
+    --branco:white;
+    --cor1:#D3CC4C;
+    --cor2:#B1AB40;
+    --cor3:#DCD650;
+    --cor4:#8F8A33;
+    --cor5:#6D6927;
+    --cor6:#4B481B;
+    --cor7:#f0eca5;
+    --cor8:white;
+    
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header__container {
+    display: flex;
+    height: 20%;
+    width: 100%;
+    background-color: var(--branco);
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo__text {
+    margin-left: 4%;
+    font-size: 180%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.menu__list {
+    font-size: 2em;
+    position: absolute;
+    right: 4%;
+}
+
+.contrast {
+    height: 90vh;
+    margin: 8px;
+
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+    
+
+}
+
+.contrast__container {
+    
+    display: flex;
+  transition: transform 0.3s ease;
+  will-change: transform;
+  touch-action: pan-y;
+}
+
+.local {
+    height: 90vh;
+    background-size: cover;
+    background-position: right;
+     flex: 0 0 100%;
+    box-sizing: border-box;
+    padding: 20px; /* opcional */
+}
+
+.local__sp {
+    background-image: url(../img/webaliser.jpg);
+    
+}
+
+.local__rs {
+    background-image: url(../img/brian.jpg);
+    
+}
+
+.local__rj {
+    background-image: url(../img/zoe.jpg);
+    
+}
+
+.local__text {
+    display: flex;
+    background-color: var(--branco);
+    width: fit-content;
+    padding: 4px 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    top: 20%;
+    margin-left:13%;
+    border: 1px solid var(--cor5);
+    
+}
+
+.local__text--contrast {
+    color: var(--cor4);
+    margin-left: 2px;
+}
+
+.text__message {
+    top: 26%;
+    width: 68%;
+    margin-left: 10%;
+    font-size:320%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:var(--cor8) ;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.img__button {
+    font-size: 1em;
+    position:absolute;
+    
+    
+}
+
+#img__button--left {
+    left: 50%;
+    top: 50%;
+}
+
