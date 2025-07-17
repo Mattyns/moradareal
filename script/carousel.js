@@ -5,7 +5,7 @@ let isDragging = false;
 let startPos = 0;
 let currentTranslate = 0;
 let prevTranslate = 0;
-let animationID;
+let animationID; 
 let currentIndex = 0;
 
 slides.forEach((slide, index) => {

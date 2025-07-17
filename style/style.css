@@ -265,7 +265,7 @@
 }
 
 .video__play {
-    width: 95%;
+    width: 100%;
     margin: auto;
     margin-bottom: 20vh;
     height: auto;
@@ -300,6 +300,63 @@
     font-size: 250%;
     align-items: center;
 }
+
+.details {
+    margin-top: 40px;
+}
+
+.details__card {
+    margin: 18px;
+    text-align: center;
+    background-color: #d3cc4c3b;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.details__number {
+    font-size: 2.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--cor6);
+}
+
+.details__text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.demo {
+    margin-top: 40px;
+}
+
+.demo__title {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.demo__menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.demo__menu--button {
+    margin: 10px;
+    background-color: black;
+    color: var(--branco);
+    padding: 8px;
+}
+
+.demo__menu--select {
+    background-color: #B1AB40;
+}
+
+
+
+
 
 
 
