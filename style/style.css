@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+
+@font-face {
+    font-family: "Grande";
+    src: url(../fonts/Thernaly.ttf);
+}
+
 :root {
     --preto:black;
     --branco:white;
@@ -11,6 +17,10 @@
     --cor6:#4B481B;
     --cor7:#f0eca5;
     --cor8:white;
+
+
+    --font-title: "Grande";
+    
     
 }
 
@@ -18,6 +28,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    list-style: none;
+
 }
 
 .header__container {
@@ -105,10 +117,10 @@
 
 .text__message {
     top: 26%;
-    width: 68%;
+    width: 70%;
     margin-left: 10%;
-    font-size:320%;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:380%;
+    font-family:var(--font-title), Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:var(--cor8) ;
     padding: 10px;
     border-radius: 10px;
@@ -325,6 +337,7 @@
 
 .demo {
     margin-top: 40px;
+    overflow: hidden;
 }
 
 .demo__title {
@@ -354,10 +367,325 @@
     background-color: #B1AB40;
 }
 
+.demo__card {
+    margin-top: 20px;
+    width: 90%;
+    margin: auto;
+    
+}
+
+.demo__list {
+    background-color: #14141417;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.demo__item {
+    display: flex;
+    align-items: center;
+    margin:10px 5px;
+    font-size: 1.3em;
+}
+
+.demo__item--descr {
+    color: var(--cor6);
+}
+
+.demo__item--valor {
+    position: absolute;
+    right: 8%;
+    font-weight: bold;
+}
+
+
+.demo__image {
+    width: 100%;
+}
+
+.demo__info {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.demo__info--title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3em;
+}
+
+.demo__info--text {
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1em;
+}
+
+.demo__button {
+    margin-top: 40px;
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 15px;
+    padding-left:60px ;
+    width: 220px;
+    height: 60px;
+    border-radius: 40px;
+    position: relative;
+    align-content: center;
+    
+}
+
+.demo__button--icon {
+    
+    left: 28px;
+    padding: 20px 20px;
+    background-color: #4B481B;
+    border-radius: 40px;
+    position: absolute;
+    display: flex;
+    align-self: normal ;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+
+.demo__button:hover {
+    animation: buttonpadd 1s ease;
+    animation-fill-mode: forwards;
+}
+
+.demo__button:hover  .demo__button--icon {
+    
+    animation: buttonslide 1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes buttonslide {
+    from {
+        left: 18px;
+    }
+
+    to {
+        left:192px;
+        
+    }
+
+    100% {
+        position:absolute;
+    }
+}
+
+@keyframes buttonpadd {
+    from {
+        padding-left: 50px;
+    }
+
+    to {
+        padding-left: 15px;
+    }
+}
+
+.demo__house {
+    display: none;
+    
+    
+}
+
+.demo__penthouse {
+    display: none;
+}
+
+.custom-anim {
+  --animate-duration: 0.3s;
+}
 
 
 
+.sales {
+    margin-top: 120px;
+}
 
+.sale__title {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+}
+
+.sale__card {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.sale__img {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.sale__category {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.sale__category--type {
+    background-color: #6d692768;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+.sale__category--price {
+    
+    display: flex;
+    margin-left: 40%;
+    color: var(--cor6);
+    font-weight: bold;
+
+}
+
+.sale__local {
+    margin: 15px 0px;
+}
+
+.sale__info--list {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    
+
+}
+
+.sale__info--item {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;      /* <-- Impede quebra de linha */
+  min-width: 0;           /* <-- Impede overflow do grid */
+  margin: 6px;
+}
+
+.sale__info--categ,
+.sale__info--valor {
+  font-size: 0.9rem;
+  white-space: nowrap;    /* <-- Impede quebra dentro do texto */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sale__info--categ {
+    margin-right: 4px;
+    color: #2a2a2a;
+}
+
+.sale__info--valor {
+    color: #000000;
+    font-weight: bold;
+}
+
+.sale--button {
+    background-color: #000000;
+    color: var(--branco);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    display: block;
+    margin:auto;
+    margin-top: 40px;
+    transition: background 0.5s ease;
+    font-size: 1.1em;
+    
+
+}
+
+.sale--button:hover {
+    background-color: var(--cor5);
+}
+
+.map__container {
+    margin: 40px 0px;
+}
+
+.map__title {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3em;
+}
+
+.map__card {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.map__local {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact {
+    margin: 80px 0px;
+    
+}
+
+.contact__phone {
+    margin: 40px auto;
+    width: 60%;
+    text-align: center;
+    display: flex;
+
+}
+
+.contact__icon {
+    font-size: 3em;
+    margin-right: 20px;
+    color: var(--cor6);
+}
+
+.contact__number, .contact__desc {
+    text-align: left;
+    margin: 5px 0px;
+}
+
+.register {
+    margin-top: 80px;
+    
+}
+
+.register__form {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.register__form > label {
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+.register__label {
+    font-size: 1.2em;
+    color: #2a2a2a;
+}
+
+
+#name__complete, #email__user, #subject, #message {
+    border: 0;
+    background-color: #2a2a2a20;
+    border-radius: 10px;
+    height: 30px;
+    
+}
+
+#message {
+    height: 80px;
+}
+
+#name__complete::placeholder, #email__user::placeholder, #subject::placeholder, #message::placeholder {
+    font-size: 1.1em;
+    text-indent: 1em;
+}
 
 
 

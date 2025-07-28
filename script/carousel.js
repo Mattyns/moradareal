@@ -1,5 +1,6 @@
 const container = document.querySelector('.contrast__container');
 const slides = document.querySelectorAll('.local');
+// NÃO ESQUECER DE BOTAR A PORRA DO PONTO AHHHHHHHHHHHHHHHHHHHH
 
 let isDragging = false;
 let startPos = 0;
