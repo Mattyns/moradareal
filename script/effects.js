@@ -1,3 +1,40 @@
+//menu que some e volta
+
+const menuList = document.querySelector('.menu__list')
+const menuOcult = document.querySelector('.menu__ocult')
+const itens = document.querySelectorAll('.menu__item')
+
+menuList.addEventListener('click', openmenu)
+
+function openmenu() {
+  menuOcult.style.display = 'flex'
+  menuOcult.style.animation = 'menuocult 0.5s ease forwards';
+  setTimeout(() => {
+  itens.forEach(item => {
+    item.style.display = 'block';
+    item.classList.add('animate__animated', 'animate__fadeIn');
+    });
+  }, 400); // 1000ms = 1 segundo
+  menuList.removeEventListener('click', openmenu)
+  menuList.addEventListener('click', exitmenu)
+
+}
+
+function exitmenu() {
+  menuOcult.style.display = 'none'
+  menuList.removeEventListener('click', exitmenu)
+  menuList.addEventListener('click', openmenu)
+
+}
+
+
+
+
+
+
+//troca de categoria seção de demostração
+
+
 // Seletores dos botões
 const buttonApartment = document.querySelector('.demo__menu--apartment');
 const buttonHouse = document.querySelector('.demo__menu--house');

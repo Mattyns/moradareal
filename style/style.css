@@ -32,6 +32,10 @@
 
 }
 
+a {
+    text-decoration: none;
+}
+
 .header__container {
     display: flex;
     height: 20%;
@@ -40,6 +44,7 @@
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    position: relative;
 }
 
 .logo__text {
@@ -52,6 +57,51 @@
     font-size: 2em;
     position: absolute;
     right: 4%;
+}
+
+.menu__ocult {
+    position: absolute;
+    flex-direction: column;
+    background-color: var(--branco);
+    border: 1px solid rgba(0, 0, 0, 0.286);
+    border-top: none;
+    border-radius:0px 0px 5px 5px;
+    left: 50%;
+    top: 60px;
+    transform: translate(-50%);
+    z-index: 2;
+    
+    display: none;
+    height: 1px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.menu__item {
+    
+    display: none;
+    padding: 10px;
+    color: var(--cor2);
+}
+
+
+@keyframes menuocult {
+    from {
+        height: 1px;
+
+    }
+
+    to {
+        height: 170px;
+    }
+}
+
+@keyframes menuitem {
+    50% {
+        display: block;
+    }
 }
 
 .contrast {
@@ -384,7 +434,7 @@
     display: flex;
     align-items: center;
     margin:10px 5px;
-    font-size: 1.3em;
+    font-size: 5vw;
 }
 
 .demo__item--descr {
@@ -526,6 +576,7 @@
     display: flex;
     margin-top: 20px;
     align-items: center;
+    position: relative;
 }
 
 .sale__category--type {
@@ -533,14 +584,17 @@
     padding: 10px;
     border-radius: 5px;
     font-size: 0.8em;
+    
 }
 
 .sale__category--price {
     
     display: flex;
-    margin-left: 40%;
+    right: 1%;
     color: var(--cor6);
     font-weight: bold;
+    position: absolute;
+    
 
 }
 
@@ -607,7 +661,7 @@
 .map__title {
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .map__card {
@@ -630,7 +684,7 @@
 
 .contact__phone {
     margin: 40px auto;
-    width: 60%;
+    width: 70%;
     text-align: center;
     display: flex;
 
@@ -645,6 +699,10 @@
 .contact__number, .contact__desc {
     text-align: left;
     margin: 5px 0px;
+}
+
+.contact__desc {
+    color: #B1AB40;
 }
 
 .register {
@@ -672,7 +730,7 @@
 
 #name__complete, #email__user, #subject, #message {
     border: 0;
-    background-color: #2a2a2a20;
+    background-color: #2a2a2a0a;
     border-radius: 10px;
     height: 30px;
     
@@ -680,6 +738,7 @@
 
 #message {
     height: 80px;
+    padding-top: 5px;
 }
 
 #name__complete::placeholder, #email__user::placeholder, #subject::placeholder, #message::placeholder {
@@ -687,6 +746,38 @@
     text-indent: 1em;
 }
 
+#message::placeholder {
+    padding-top: 5px;
+}
+
+.send__register {
+    border: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+    width: 75%;
+    margin: auto;
+    margin-top: 80px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: background-color 0.8s ease;
+}
+
+.send__register:hover {
+    background-color: #B1AB40;
+}
+
+.footer__container {
+    margin-top: 80px;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+}
+
+.footer__container > p {
+    margin: 10px 0px;
+}
 
 
 
