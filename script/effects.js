@@ -1,31 +1,65 @@
 //menu que some e volta
 
-const menuList = document.querySelector('.menu__list')
-const menuOcult = document.querySelector('.menu__ocult')
-const itens = document.querySelectorAll('.menu__item')
+const menuList = document.querySelector('.menu__list');
+const menuOcult = document.querySelector('.menu__ocult');
+const itens = document.querySelectorAll('.menu__item');
 
-menuList.addEventListener('click', openmenu)
+menuList.addEventListener('click', openmenu);
 
 function openmenu() {
-  menuOcult.style.display = 'flex'
+  menuOcult.style.display = 'flex';
   menuOcult.style.animation = 'menuocult 0.5s ease forwards';
-  setTimeout(() => {
-  itens.forEach(item => {
-    item.style.display = 'block';
-    item.classList.add('animate__animated', 'animate__fadeIn');
-    });
-  }, 400); // 1000ms = 1 segundo
-  menuList.removeEventListener('click', openmenu)
-  menuList.addEventListener('click', exitmenu)
 
+  // Troca o ícone com animação
+  menuList.classList.add('animate__animated', 'animate__fadeOut');
+  menuList.addEventListener('animationend', function trocaIcone() {
+    menuList.classList.remove('bi-list');
+    menuList.classList.add('bi-x-lg');
+
+    menuList.classList.remove('animate__fadeOut');
+    menuList.classList.add('animate__fadeIn');
+
+    menuList.addEventListener('animationend', () => {
+      menuList.classList.remove('animate__animated', 'animate__fadeIn');
+    }, { once: true });
+
+    menuList.removeEventListener('animationend', trocaIcone);
+  }, { once: true });
+
+  setTimeout(() => {
+    itens.forEach(item => {
+      item.style.display = 'block';
+      item.classList.add('animate__animated', 'animate__fadeIn');
+    });
+  }, 400);
+
+  menuList.removeEventListener('click', openmenu);
+  menuList.addEventListener('click', exitmenu);
 }
 
 function exitmenu() {
-  menuOcult.style.display = 'none'
-  menuList.removeEventListener('click', exitmenu)
-  menuList.addEventListener('click', openmenu)
+  menuOcult.style.display = 'none';
 
+  // Troca o ícone de volta com animação
+  menuList.classList.add('animate__animated', 'animate__fadeOut');
+  menuList.addEventListener('animationend', function trocaIcone() {
+    menuList.classList.remove('bi-x-lg');
+    menuList.classList.add('bi-list');
+
+    menuList.classList.remove('animate__fadeOut');
+    menuList.classList.add('animate__fadeIn');
+
+    menuList.addEventListener('animationend', () => {
+      menuList.classList.remove('animate__animated', 'animate__fadeIn');
+    }, { once: true });
+
+    menuList.removeEventListener('animationend', trocaIcone);
+  }, { once: true });
+
+  menuList.removeEventListener('click', exitmenu);
+  menuList.addEventListener('click', openmenu);
 }
+
 
 
 
