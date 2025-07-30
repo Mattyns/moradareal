@@ -20,6 +20,8 @@
 
 
     --font-title: "Grande";
+
+    
     
     
 }
@@ -780,4 +782,87 @@ a {
 }
 
 
+@media screen and (min-Width:768px) {
 
+
+    :root {
+        --size-title: 3em;
+        --size-subtitle: 1.8em;
+        --size-text:1.4em;
+    }
+
+    /*lembrar de trocar o menu*/
+
+    .local {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        
+        
+    }
+
+    .text__message {
+        
+        width: 50%;
+        font-size: 6em;
+    }
+
+    .local__text {
+        
+        font-size: 1.2em;
+        margin-left: 86px;
+
+    }
+
+    .present {
+        margin-top: 100px;
+    }
+
+    .present__title {
+        font-size:  var(--size-title);
+    }
+
+    .present__subtitle {
+        font-size: var(--size-subtitle);
+    }
+
+    .present__text {
+        font-size: var(--size-text);
+    }
+
+    .present__more {
+        font-size: 1.3em;
+    }
+
+
+
+    .services__title {
+        font-size: var(--size-title);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .service__container {
+        margin-left: 40px;
+        
+    }
+
+
+    .service__icon {
+        font-size: 5em;
+    }
+
+  
+
+    .service__title {
+        grid-row: 1;       /* linha 1 */
+        grid-column: 2;    /* coluna 2 */
+    }
+
+    .service__text {
+        grid-row: 2;       /* linha 2 */
+        grid-column: 2;    /* coluna 2 */
+        width: 80%;
+        align-self: baseline;
+    }
+    
+}
