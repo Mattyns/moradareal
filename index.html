@@ -24,6 +24,12 @@
         <header class="header__container">
             
             <h1 class="logo__text">MORADA REAL</h1> <i class="bi-list menu__list"></i>
+            <nav class="menu__screen--pc">
+                <a href="#" class="menu__item--pc">Home</a>
+                <a href="#" class="menu__item--pc">Propriedades</a>
+                <a href="#" class="menu__item--pc">Sobre Nós</a>
+                <a href="#" class="menu__item--pc">Contato</a>
+            </nav>
 
             <nav class="menu__ocult">
                 <a href="#" class="menu__item">Home</a>
@@ -63,10 +69,13 @@
 
             </section>
             <section class="present">
-                <h1 class="present__title">Bem-vindo à Morada Real</h1>
-                <h2 class="present__subtitle">Onde Seu Novo Lar Ganha Vida</h2>
-                <p class="present__text">Com 12 anos de experiência no mercado imobiliário, a Morada Real se consolidou como referência em excelência, confiança e atendimento personalizado. Atuamos com foco em atender as necessidades da classe média e alta, oferecendo imóveis cuidadosamente selecionados para quem busca qualidade, conforto e valorização patrimonial.</p>
-                <a href="#" class="button__link present__more"><p>Saiba mais</p> <i class="bi-box-arrow-in-right"></i></a>
+                <img src="img/present-house.jpg" alt="Casa interna" class="present__img">
+                <div class="present__align--pc">
+                    <h1 class="present__title">Bem-vindo à Morada Real</h1>
+                    <h2 class="present__subtitle">Onde Seu Novo Lar Ganha Vida</h2>
+                    <p class="present__text">Com 12 anos de experiência no mercado imobiliário, a Morada Real se consolidou como referência em excelência, confiança e atendimento personalizado. Atuamos com foco em atender as necessidades da classe média e alta, oferecendo imóveis cuidadosamente selecionados para quem busca qualidade, conforto e valorização patrimonial.</p>
+                    <a href="#" class="button__link present__more"><p>Saiba mais</p> <i class="bi-box-arrow-in-right"></i></a>
+                </div>
 
             </section>
 
@@ -121,12 +130,14 @@
             </section>
 
             <section class="demo">
-                <h1 class="demo__title">ENCONTRE A MELHOR OFERTA AGORA MESMO!</h1>
-                <ul class="demo__menu">
-                    <li class="demo__menu--button demo__menu--apartment demo__menu--select">Apartamento</li>
-                    <li class="demo__menu--button demo__menu--house">Casa</li>
-                    <li class="demo__menu--button demo__menu--penthouse">Cobertura</li>
-                </ul>
+                <div class="demo__menu--align">
+                    <h1 class="demo__title">ENCONTRE A MELHOR OFERTA AGORA MESMO!</h1>
+                    <ul class="demo__menu">
+                        <li class="demo__menu--button demo__menu--apartment demo__menu--select">Apartamento</li>
+                        <li class="demo__menu--button demo__menu--house">Casa</li>
+                        <li class="demo__menu--button demo__menu--penthouse">Cobertura</li>
+                    </ul>
+                </div>
                 <div class="demo__card demo__apartment">
                     <ul class="demo__list">
                         <li class="demo__item"><p class="demo__item--descr">Área Total:</p> <p class="demo__item--valor">182<sup>m2</sup></p></li>
@@ -197,148 +208,133 @@
 
                 <div class="sales">
                     <h1 class="sale__title">Nós Temos O Melhor Imóvel Para Você</h1>
-                    <div class="sale__card">
-                        <img src="img/sale2-house1.jpg" alt="casa a venda" class="sale__img">
-                        <div class="sale__category">
-                            <p class="sale__category--type">Casa de Luxo</p><p class="sale__category--price">$ 2.300.000</p>
+                    <div class="sale__container">
+                        <div class="sale__card">
+                            <img src="img/sale2-house1.jpg" alt="casa a venda" class="sale__img">
+                            <div class="sale__category">
+                                <p class="sale__category--type">Casa de Luxo</p><p class="sale__category--price">$ 2.300.000</p>
+                            </div>
+                            <h2 class="sale__local">Rio Grande do Sul</h2>
+                            <div class="sale__info">
+                                <ul class="sale__info--list">
+                                    <li class="sale__info--item"><p class="sale__info--categ">Quartos:</p> <p class="sale__info--valor">7</p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Banheiros:</p> <p class="sale__info--valor">6</p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Área:</p> <p class="sale__info--valor">520<sup>m2</sup></p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Andares:</p> <p class="sale__info--valor">2</p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Estacionamento:</p> <p class="sale__info--valor">5 vagas</p></li>
+                                </ul>
+                            </div>
+                            <button class="sale--button">Agende uma visita</button>
                         </div>
-                        <h2 class="sale__local">Rio Grande do Sul</h2>
-                        <div class="sale__info">
-                            <ul class="sale__info--list">
-                                <li class="sale__info--item"><p class="sale__info--categ">Quartos:</p> <p class="sale__info--valor">7</p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Banheiros:</p> <p class="sale__info--valor">6</p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Área:</p> <p class="sale__info--valor">520<sup>m2</sup></p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Andares:</p> <p class="sale__info--valor">2</p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Estacionamento:</p> <p class="sale__info--valor">5 vagas</p></li>
-                            </ul>
+                        <div class="sale__card">
+                            <img src="img/sale2-house2.jpg" alt="casa a venda" class="sale__img">
+                            <div class="sale__category">
+                                <p class="sale__category--type">Casa de Luxo</p><p class="sale__category--price">$ 1.800.000</p>
+                            </div>
+                            <h2 class="sale__local">São Paulo</h2>
+                            <div class="sale__info">
+                                <ul class="sale__info--list">
+                                    <li class="sale__info--item"><p class="sale__info--categ">Quartos:</p> <p class="sale__info--valor">6</p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Banheiros:</p> <p class="sale__info--valor">6</p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Área:</p> <p class="sale__info--valor">410<sup>m2</sup></p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Andares:</p> <p class="sale__info--valor">1</p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Estacionamento:</p> <p class="sale__info--valor">3 vagas</p></li>
+                                </ul>
+                            </div>
+                            <button class="sale--button">Agende uma visita</button>
                         </div>
-
-                        <button class="sale--button">Agende uma visita</button>
-
-                    </div>
-
-                    <div class="sale__card">
-                        <img src="img/sale2-house2.jpg" alt="casa a venda" class="sale__img">
-                        <div class="sale__category">
-                            <p class="sale__category--type">Casa de Luxo</p><p class="sale__category--price">$ 1.800.000</p>
+                        <div class="sale__card">
+                            <img src="img/sale2-apartment1.jpg" alt="Apartamento a venda" class="sale__img">
+                            <div class="sale__category">
+                                <p class="sale__category--type">Apartamento</p><p class="sale__category--price">$ 800.200</p>
+                            </div>
+                            <h2 class="sale__local">São Paulo</h2>
+                            <div class="sale__info">
+                                <ul class="sale__info--list">
+                                    <li class="sale__info--item"><p class="sale__info--categ">Quartos:</p> <p class="sale__info--valor">4</p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Banheiros:</p> <p class="sale__info--valor">3</p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Área:</p> <p class="sale__info--valor">130<sup>m2</sup></p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Andar:</p> <p class="sale__info--valor">19º</p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Estacionamento:</p> <p class="sale__info--valor">2 carros</p></li>
+                                </ul>
+                            </div>
+                            <button class="sale--button">Agende uma visita</button>
                         </div>
-                        <h2 class="sale__local">São Paulo</h2>
-                        <div class="sale__info">
-                            <ul class="sale__info--list">
-                                <li class="sale__info--item"><p class="sale__info--categ">Quartos:</p> <p class="sale__info--valor">6</p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Banheiros:</p> <p class="sale__info--valor">6</p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Área:</p> <p class="sale__info--valor">410<sup>m2</sup></p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Andares:</p> <p class="sale__info--valor">1</p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Estacionamento:</p> <p class="sale__info--valor">3 vagas</p></li>
-                            </ul>
+                        <div class="sale__card">
+                            <img src="img/sale2-apartment2.jpg" alt="Apartamento a venda" class="sale__img">
+                            <div class="sale__category">
+                                <p class="sale__category--type">Apartamento</p><p class="sale__category--price">$ 650.100</p>
+                            </div>
+                            <h2 class="sale__local">Rio de Janeiro</h2>
+                            <div class="sale__info">
+                                <ul class="sale__info--list">
+                                    <li class="sale__info--item"><p class="sale__info--categ">Quartos:</p> <p class="sale__info--valor">5</p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Banheiros:</p> <p class="sale__info--valor">3</p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Área:</p> <p class="sale__info--valor">115<sup>m2</sup></p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Andar:</p> <p class="sale__info--valor">22º</p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Estacionamento:</p> <p class="sale__info--valor">2 carros</p></li>
+                                </ul>
+                            </div>
+                            <button class="sale--button">Agende uma visita</button>
                         </div>
-
-                        <button class="sale--button">Agende uma visita</button>
-
-                    </div>
-
-                    <div class="sale__card">
-                        <img src="img/sale2-apartment1.jpg" alt="Apartamento a venda" class="sale__img">
-                        <div class="sale__category">
-                            <p class="sale__category--type">Apartamento</p><p class="sale__category--price">$ 800.200</p>
+                        <div class="sale__card">
+                            <img src="img/sale2-apartment3.jpg" alt="Cobertura" class="sale__img">
+                            <div class="sale__category">
+                                <p class="sale__category--type">Cobertura</p><p class="sale__category--price">$ 950.200</p>
+                            </div>
+                            <h2 class="sale__local">Minas Gerais</h2>
+                            <div class="sale__info">
+                                <ul class="sale__info--list">
+                                    <li class="sale__info--item"><p class="sale__info--categ">Quartos:</p> <p class="sale__info--valor">4</p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Banheiros:</p> <p class="sale__info--valor">4</p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Área:</p> <p class="sale__info--valor">182<sup>m2</sup></p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Andar:</p> <p class="sale__info--valor">38º</p></li>
+                                    <li class="sale__info--item"><p class="sale__info--categ">Estacionamento:</p> <p class="sale__info--valor">2 carros</p></li>
+                                </ul>
+                            </div>
+                            <button class="sale--button">Agende uma visita</button>
                         </div>
-                        <h2 class="sale__local">São Paulo</h2>
-                        <div class="sale__info">
-                            <ul class="sale__info--list">
-                                <li class="sale__info--item"><p class="sale__info--categ">Quartos:</p> <p class="sale__info--valor">4</p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Banheiros:</p> <p class="sale__info--valor">3</p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Área:</p> <p class="sale__info--valor">130<sup>m2</sup></p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Andar:</p> <p class="sale__info--valor">19º</p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Estacionamento:</p> <p class="sale__info--valor">2 carros</p></li>
-                            </ul>
-                        </div>
-
-                        <button class="sale--button">Agende uma visita</button>
-
-                    </div>
-
-                    <div class="sale__card">
-                        <img src="img/sale2-apartment2.jpg" alt="Apartamento a venda" class="sale__img">
-                        <div class="sale__category">
-                            <p class="sale__category--type">Apartamento</p><p class="sale__category--price">$ 650.100</p>
-                        </div>
-                        <h2 class="sale__local">Rio de Janeiro</h2>
-                        <div class="sale__info">
-                            <ul class="sale__info--list">
-                                <li class="sale__info--item"><p class="sale__info--categ">Quartos:</p> <p class="sale__info--valor">5</p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Banheiros:</p> <p class="sale__info--valor">3</p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Área:</p> <p class="sale__info--valor">115<sup>m2</sup></p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Andar:</p> <p class="sale__info--valor">22º</p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Estacionamento:</p> <p class="sale__info--valor">2 carros</p></li>
-                            </ul>
-                        </div>
-
-                        <button class="sale--button">Agende uma visita</button>
-
-                    </div>
-
-                    <div class="sale__card">
-                        <img src="img/sale2-apartment3.jpg" alt="Cobertura" class="sale__img">
-                        <div class="sale__category">
-                            <p class="sale__category--type">Cobertura</p><p class="sale__category--price">$ 950.200</p>
-                        </div>
-                        <h2 class="sale__local">Minas Gerais</h2>
-                        <div class="sale__info">
-                            <ul class="sale__info--list">
-                                <li class="sale__info--item"><p class="sale__info--categ">Quartos:</p> <p class="sale__info--valor">4</p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Banheiros:</p> <p class="sale__info--valor">4</p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Área:</p> <p class="sale__info--valor">182<sup>m2</sup></p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Andar:</p> <p class="sale__info--valor">38º</p></li>
-                                <li class="sale__info--item"><p class="sale__info--categ">Estacionamento:</p> <p class="sale__info--valor">2 carros</p></li>
-                            </ul>
-                        </div>
-
-                        <button class="sale--button">Agende uma visita</button>
-
                     </div>
 
                 </div>
             </section>
 
-            <section class="map__container">
-                <h1 class="map__title">Converse Com Nossos Agentes</h1>
-                <div class="map__card"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2823.5778112046164!2d-46.69387042973287!3d-23.574090015161566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDM0JzI2LjciUyA0NsKwNDEnMjEuMyJX!5e1!3m2!1spt-BR!2sbr!4v1753390877357!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map__local"></iframe></div>
-
-                <div class="contact">
-                    <div class="contact__phone">
-                        <i class="bi-telephone-fill contact__icon"></i>
-                        <div class="contact__info">
-                            <p class="contact__number">(11) 4002-7788</p>
-                            <p class="contact__desc">Número de Telefone</p>
+            <section class="contact--align">
+                <h1 class="contact__title">Converse Com Nossos Agentes</h1>
+                <section class="map__container">
+                    <h1 class="map__title">Converse Com Nossos Agentes</h1>
+                    <div class="map__card"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2823.5778112046164!2d-46.69387042973287!3d-23.574090015161566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDM0JzI2LjciUyA0NsKwNDEnMjEuMyJX!5e1!3m2!1spt-BR!2sbr!4v1753390877357!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map__local"></iframe></div>
+                    <div class="contact">
+                        <div class="contact__phone">
+                            <i class="bi-telephone-fill contact__icon"></i>
+                            <div class="contact__info">
+                                <p class="contact__number">(11) 4002-7788</p>
+                                <p class="contact__desc">Número de Telefone</p>
+                            </div>
+                        </div>
+                        <div class="contact__phone">
+                            <i class="bi-envelope-fill contact__icon"></i>
+                            <div class="contact__info">
+                                <p class="contact__number">moradareal.atend@gmail.com</p>
+                                <p class="contact__desc">E-mail Comercial</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="contact__phone">
-                        <i class="bi-envelope-fill contact__icon"></i>
-                        <div class="contact__info">
-                            <p class="contact__number">moradareal.atend@gmail.com</p>
-                            <p class="contact__desc">E-mail Comercial</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="register">
-                <form class="register__form">
-                    <label for="name__complete" class="register__label">Nome Completo</label>
-                    <input type="text" name="name__complete" id="name__complete" placeholder="Seu Nome">
-
-                    <label for="email__user" class="register__label">Endereço de Email</label>
-                    <input type="email" name="email__user" id="email__user" placeholder="Seu E-mail">
-
-                    <label for="subject" class="register__label">Assunto</label>
-                    <input type="text" name="subject" id="subject" placeholder="Assunto">
-
-                    <label for="message" class="register__label">Mensagem</label>
-                    <textarea name="message" id="message" placeholder="Sua Mensagem"></textarea>
-
-                    <button type="submit" class="send__register">Enviar Mensagem</button>
-
-                </form>
+                <section class="register">
+                    <form class="register__form">
+                        <label for="name__complete" class="register__label">Nome Completo</label>
+                        <input type="text" name="name__complete" id="name__complete" placeholder="Seu Nome">
+                        <label for="email__user" class="register__label">Endereço de Email</label>
+                        <input type="email" name="email__user" id="email__user" placeholder="Seu E-mail">
+                        <label for="subject" class="register__label">Assunto</label>
+                        <input type="text" name="subject" id="subject" placeholder="Assunto">
+                        <label for="message" class="register__label">Mensagem</label>
+                        <textarea name="message" id="message" placeholder="Sua Mensagem"></textarea>
+                        <button type="submit" class="send__register">Enviar Mensagem</button>
+                    </form>
+                </section>
             </section>
 
 
