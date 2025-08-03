@@ -38,6 +38,10 @@ a {
     text-decoration: none;
 }
 
+.network__header {
+    display: none;
+}
+
 .header__container {
     display: flex;
     height: 20%;
@@ -894,7 +898,9 @@ a {
 
 
     .video__container {
-        height: 80vh;
+        height: 60vw;
+        min-height: 620px;
+        transition: height 0.5s ease;
     }
 
     .video__title {
@@ -1049,6 +1055,53 @@ a {
 
 @media screen and (min-Width:1024px) {
 
+    .network__header {
+        display: flex;
+        padding: 20px;
+    }
+
+    .network__email {
+        display: flex;
+        align-items: center;
+        color: #2a2a2a;
+    }
+
+    .network__email--icon {
+        color: var(--cor4);
+        font-size: 2em;
+        margin-right: 10px;
+    }
+
+    .network__social {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 10px;
+    }
+
+    .social--icon {
+        font-size: 1.2em;
+        margin: auto 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+        background-color: #888383;
+        color: var(--branco);
+        border-radius: 50%;
+    }
+
+    .social--icon:hover {
+        background-color: var(--cor3);
+    }
+
+    .header__container {
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+        box-shadow: -0px 5px 5px 0px rgba(0, 0, 0, 0.183);
+    }
+
+
+
     .text__message {
         font-size: 5em;
     }
@@ -1075,6 +1128,18 @@ a {
 
     .menu__item--pc:hover {
         color: var(--preto);
+    }
+
+    .contrast {
+        height: 110vh;
+    }
+
+    .contrast__container {
+        height: 100%;
+    }
+
+    .local {
+        height: 100%;   
     }
 
     .local__text {
@@ -1109,21 +1174,45 @@ a {
     }
 
     .services__title {
-        width: 80%;
+        width: 60%;
         text-align: center;
         margin: auto;
         
     }
 
+    .service__container {
+        display: flex;
+        flex-direction: row;
+    }
+
     .service__card {
         margin: 40px;
         
-        width: 60%;
+        
+    }
+
+    .service__icon {
+        font-size: 5em;
+    }
+
+    .service__title {
+        font-size: 1em;
+    }
+
+    .service__text {
+        font-size: 1em;
     }
 
 
+
+
+
     .video__container {
-        height: 90vh;
+        height: 98vh;
+    }
+
+    .details__card {
+        width: 30%;
     }
 
 
@@ -1183,9 +1272,11 @@ a {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+
+
     .contact--align {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
     }
 
     .contact__title {
@@ -1279,6 +1370,7 @@ a {
         margin-top: 80px;
         margin-left: 20px;
         margin-bottom: 118px;
+        width: 80%;
     }
 
 
