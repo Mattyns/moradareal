@@ -6,6 +6,11 @@
     src: url(../fonts/Thernaly.ttf);
 }
 
+@font-face {
+    font-family: "Digital";
+    src: url(../fonts/Motley.ttf);
+}
+
 :root {
     --preto:black;
     --branco:white;
@@ -20,6 +25,7 @@
 
 
     --font-title: "Grande";
+    --font-title2: "Digital";
 
     
     
@@ -94,6 +100,10 @@ a {
     display: none;
     padding: 10px;
     color: var(--cor2);
+}
+
+.menu__item--special {
+    color: var(--preto);
 }
 
 
@@ -799,6 +809,69 @@ a {
 }
 
 
+
+
+/*propriedades*/
+
+.proprieties__head {
+    height: 300px;
+    background-image: url(../img/propieties.jpg);
+    background-size: 120%;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proprieties__title {
+    color: var(--branco);
+    font-family: var(--font-title);
+    font-size: 3em;
+    letter-spacing: 2px;
+    
+}
+
+.sale__filter {
+    display:grid;
+    justify-content: center;
+    margin-bottom: 50px;
+    overflow-wrap: normal;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: fit-content;
+    margin: auto;
+    
+}
+
+.filter__button {
+    margin: 10px;
+    width: 100px;
+    padding: 8px;
+    background-color: var(--preto);
+    color: var(--branco);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    border-radius: 5px;
+}
+
+.filter__button:hover {
+    color: var(--cor4);
+    transition: color 1s ease;
+}
+
+.filter__penthouse {
+    
+    grid-column: 2;
+}
+
+.filter--select {
+    background-color: var(--cor4);
+}
+
+.filter--select:hover {
+    color: var(--branco);
+}
+
+
 @media screen and (min-Width:768px) {
 
 
@@ -1122,12 +1195,16 @@ a {
         color: var(--cor4);
         font-size: 1.2em;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        transition: color 0.3s ease;
-        transition-delay: 0.5s;
+        transition: color 1s ease;
+        
     }
 
     .menu__item--pc:hover {
         color: var(--preto);
+    }
+
+    .menu__item--special {
+    color: var(--preto);
     }
 
     .contrast {
